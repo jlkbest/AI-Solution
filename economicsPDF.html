@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Solution - Proposta Economica</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 170mm;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .header {
+            border-bottom: 2px solid #ea4335;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #ea4335;
+            margin: 0;
+            font-size: 20pt;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .header .logo-text {
+            font-weight: bold;
+            font-size: 14pt;
+            color: #666;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+
+        .section-tag {
+            color: #ea4335;
+            text-transform: uppercase;
+            font-size: 9pt;
+            font-weight: 800;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .section h2 {
+            font-size: 16pt;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        /* Tabelle dei costi */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 10pt;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #ea4335;
+            text-align: left;
+            padding: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .total-row {
+            background-color: #fff5f5;
+            font-weight: bold;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 3px solid #ea4335;
+            font-size: 9pt;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 8pt;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { background: none; }
+            .page { width: 100%; margin: 0; }
+        }
+
+        .print-control {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #ea4335;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-control no-print" onclick="window.print()">Esporta Proposta PDF</button>
+
+<div class="page">
+    <div class="header">
+        <div>
+            <div class="section-tag">Quadro Economico</div>
+            <h1>Economics AI Solution</h1>
+        </div>
+        <div class="logo-text">BEST RENT</div>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Deployment & Adeguamento</div>
+        <h2>Analisi Progettuale Una Tantum</h2>
+        <div class="content-grid">
+            <div class="card">
+                <strong>MODALITÀ SAAS</strong>
+                Gestione completa in cloud, infrastruttura inclusa e setup rapido.
+            </div>
+            <div class="card">
+                <strong>MODALITÀ ON-PREMISE</strong>
+                Massimo controllo e privacy, installazione su server cliente.
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Milestone Progettuali (M1 - M4)</th>
+                    <th style="text-align: right;">Importo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assessment, Data Modeling, Tuning AI & Formazione Operativa</td>
+                    <td style="text-align: right;">€ 36.800,00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>TOTALE INVESTIMENTO STARTUP (UNA TANTUM)</td>
+                    <td style="text-align: right;">€ 36.800,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Servizi Ricorrenti</div>
+        <h2>Canone Servizi e Supporto</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrizione Servizio</th>
+                    <th style="text-align: right;">Mensile</th>
+                    <th style="text-align: right;">Annuale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Licenza d'uso AI Solution e Supporto (120 ticket/anno)</td>
+                    <td style="text-align: right;">€ 1.670,00</td>
+                    <td style="text-align: right;">€ 20.000,00</td>
+                </tr>
+                <tr>
+                    <td>Infrastruttura Cloud & AI Engine (Stima SaaS)</td>
+                    <td style="text-align: right;">€ 830,00</td>
+                    <td style="text-align: right;">€ 10.000,00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>TOTALE CANONE SERVIZI</td>
+                    <td style="text-align: right;">€ 2.500,00</td>
+                    <td style="text-align: right;">€ 30.000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Sintesi Finanziaria</div>
+        <h2>Quadro Economico Complessivo</h2>
+        <table style="border: 1px solid #eee;">
+            <tr style="background-color: #f8f9fa;">
+                <td><strong>INVESTIMENTO TOTALE ANNO 1</strong> (Progetto + Canone)</td>
+                <td style="text-align: right; font-size: 14pt; color: #ea4335;"><strong>€ 56.800,00</strong></td>
+            </tr>
+            <tr>
+                <td><strong>INVESTIMENTO ANNUALE A REGIME</strong> (Dal 2° Anno)</td>
+                <td style="text-align: right; font-size: 12pt;"><strong>€ 30.000,00</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Razionale Economico</div>
+        <h2>Ritorno sull'Investimento (ROI)</h2>
+        <div class="content-grid">
+            <div class="card">
+                <strong>BENEFICI OPERATIVI</strong>
+                Riduzione drastica dei tempi di revisione manuale e abbattimento dei costi legati a rischi di non-compliance.
+            </div>
+            <div class="card">
+                <strong>VALUE PROPOSITION</strong>
+                Automazione dei flussi gerarchici e centralizzazione del know-how per una governance documentale sicura.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Proposta Economica Riservata - Best Rent srl - © 2026 AI Solution Division
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Solution - Documentazione Tecnica</title>
+    <style>
+        /* Setup della pagina A4 */
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 170mm;
+            margin: 0 auto;
+            background: white;
+        }
+
+        /* Intestazione */
+        .header {
+            border-bottom: 2px solid #4285f4;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #4285f4;
+            margin: 0;
+            font-size: 24pt;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .header .logo-text {
+            font-weight: bold;
+            font-size: 14pt;
+            color: #666;
+        }
+
+        /* Sezioni */
+        .section {
+            margin-bottom: 35px;
+            page-break-inside: avoid;
+        }
+
+        .section-tag {
+            color: #4285f4;
+            text-transform: uppercase;
+            font-size: 9pt;
+            font-weight: 800;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .section h2 {
+            font-size: 18pt;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        /* Griglia contenuti */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 3px solid #4285f4;
+        }
+
+        .card strong {
+            color: #4285f4;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 11pt;
+            text-transform: uppercase;
+        }
+
+        .full-card {
+            grid-column: span 2;
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 3px solid #333;
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 10mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 8pt;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        /* Stili per la stampa */
+        @media print {
+            .no-print { display: none; }
+            body { background: none; }
+            .page { width: 100%; margin: 0; }
+        }
+
+        .print-control {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-control no-print" onclick="window.print()">Scarica come PDF</button>
+
+<div class="page">
+    <div class="header">
+        <div>
+            <div class="section-tag">Presentazione Tecnica</div>
+            <h1>AI Solution</h1>
+        </div>
+        <div class="logo-text">BEST RENT</div>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">La Visione</div>
+        <h2>Concetto e Strategia</h2>
+        <div class="content-grid">
+            <div class="card">
+                <strong>Ecosistema Interconnesso</strong>
+                Superamento dei tradizionali silos documentali. L'informazione frammentata viene trasformata in un patrimonio dinamico e "AI-Ready".
+            </div>
+            <div class="card">
+                <strong>Motore Semantico</strong>
+                Passaggio dalla ricerca per parole chiave alla comprensione profonda del contesto e delle relazioni tra i contenuti.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Processo Operativo</div>
+        <h2>Alimentazione e Caricamento</h2>
+        <div class="content-grid">
+            <div class="card">
+                <strong>Input Intelligente</strong>
+                Caricamento tramite interfaccia dedicata (GUI) con selezione della gerarchia documentale e dei metadati fondamentali.
+            </div>
+            <div class="card">
+                <strong>Relazioni Predittive</strong>
+                Correlazione istantanea dei file con i repository strutturati (SQL) e semantici (MongoDB) tramite algoritmi proprietari.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Modello Gerarchico</div>
+        <h2>La Piramide della Compliance</h2>
+        <div class="content-grid">
+            <div class="card">
+                <strong>L1 - Atto Ufficiale</strong>
+                Il fondamento normativo e la sorgente di verità assoluta per l'intero sistema.
+            </div>
+            <div class="card">
+                <strong>L2 - Global Policy</strong>
+                Linee guida aziendali che devono essere costantemente allineate alle sorgenti di Livello 1.
+            </div>
+            <div class="full-card">
+                <strong>L3 - Documento Finale</strong>
+                Livello operativo (contratti e atti) soggetto a verifica di conformità automatica rispetto a policy e atti ufficiali.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-tag">Analisi d'Impatto</div>
+        <h2>Efficienza e Monitoraggio</h2>
+        <div class="content-grid">
+            <div class="card">
+                <strong>Monitoraggio Dinamico</strong>
+                Capacità di identificare istantaneamente i documenti obsoleti a seguito di aggiornamenti legislativi o di policy.
+            </div>
+            <div class="card">
+                <strong>Compliance Totale</strong>
+                Garanzia di allineamento costante dell'intero archivio aziendale, eliminando ridondanze e rischi operativi.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Documentazione Riservata - Best Rent srl - © 2026 AI Solution Division
+    </div>
+</div>
+
+</body>
+</html>

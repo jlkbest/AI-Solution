@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" modified="2024-03-21T00:00:00.000Z" agent="AI Solution Diagram" version="24.0.0">
+  <diagram id="AI_Solution_Logic" name="Logica Operativa AI Solution">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="step1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="480" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="step1_label" value="STEP 1: ALIMENTAZIONE E RELAZIONE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="doc_in" value="DOCUMENTI&#xa;(PDF / DOCX)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="80" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gui_load" value="GUI CARICAMENTO&#xa;(Dot.Net C#)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="220" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gerarchia" value="SCELTA GERARCHIA&#xa;L1: Atto Ufficiale&#xa;L2: Global Policy&#xa;L3: Doc. Finale" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ai_rel" value="AI CORE (Python)&#xa;Relazione Intelligente&#xa;KPI &amp; Chunking" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="390" y="160" width="100" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sql_db" value="SQL SERVER&#xa;(Relazioni &amp; Gerarchie)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="400" y="380" width="90" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mongo_db" value="MONGODB&#xa;(Contenuti &amp; Chunk)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="235" y="380" width="90" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="480" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="step2_label" value="STEP 2: OPERATIVITÀ E ANALISI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="740" y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ai_engine" value="MOTORE AI&#xa;Ottimizzato dalle Relazioni" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="815" y="150" width="130" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="func_a" value="COMPLIANCE&#xa;Gerarchica &amp; Riscrittura" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="680" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="func_b" value="PROCUREMENT&#xa;Score Qualità Fornitori" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="820" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="func_c" value="IMPACT ANALYSIS&#xa;Alert Aggiornamenti" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="960" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="output" value="OUTPUT&#xa;Report &amp; Dashboard" style="shape=display;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="815" y="420" width="130" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" edge="1" parent="1" source="doc_in" target="gui_load"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="gui_load" target="gerarchia"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="gerarchia" target="ai_rel"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="ai_rel" target="sql_db"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="ai_rel" target="mongo_db"><mxGeometry relative="1" as="geometry" /></mxCell>
+        
+        <mxCell id="e6" edge="1" parent="1" source="sql_db" target="ai_engine" style="edgeStyle=orthogonalEdgeStyle;curved=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=#4285f4;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="580" y="430" /><mxPoint x="580" y="215" /></Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="e7" edge="1" parent="1" source="ai_engine" target="func_a"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="ai_engine" target="func_b"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="ai_engine" target="func_c"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="func_b" target="output"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

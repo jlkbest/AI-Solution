@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solution - Hub Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            /* Ridimensionamento automatico dello sfondo */
+            background: url('Ai-left.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+            display: block; 
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: #000;
+        }
+
+        .hub-overlay {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, rgba(0,0,0,0.9) 15%, rgba(0,0,0,0.3) 100%);
+            display: flex;
+            align-items: center; 
+            padding-left: 60px;
+            box-sizing: border-box;
+        }
+
+        .hub-content {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .hub-header {
+            margin-bottom: 35px;
+        }
+
+        /* Container per Presenta + Logo */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .presenta-text {
+            font-size: 11px;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .hub-logo {
+            height: 35px; /* Dimensione ottimizzata per stare in linea col testo */
+            width: auto;
+            filter: brightness(1.2);
+        }
+
+        .hub-header h1 {
+            font-size: 3.2rem;
+            line-height: 1;
+            margin: 0;
+            color: #fff;
+            letter-spacing: -1.5px;
+            font-weight: 800;
+        }
+
+        .hub-menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .hub-card {
+            background: rgba(20, 20, 20, 0.85);
+            padding: 18px 22px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            backdrop-filter: blur(5px); /* Effetto vetro opaco */
+        }
+
+        .hub-card:hover {
+            transform: translateX(10px);
+            border-color: var(--accent-blue);
+            background: rgba(30, 30, 30, 0.95);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .hub-card .section-title {
+            margin-bottom: 4px;
+            font-size: 11px;
+            color: var(--accent-blue);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .hub-card p {
+            margin: 0;
+            font-size: 13px;
+            color: #ccc;
+            line-height: 1.4;
+        }
+
+        /* --- MOBILE OPTIMIZATION --- */
+        @media (max-width: 768px) {
+            .hub-overlay {
+                padding-left: 20px;
+                padding-right: 20px;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0,0,0,0.7); /* Overlay più scuro su mobile */
+            }
+
+            .hub-content {
+                text-align: center;
+            }
+
+            .brand-container {
+                justify-content: center;
+            }
+
+            .hub-header h1 {
+                font-size: 2.8rem;
+            }
+
+            .hub-card:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hub-overlay">
+    <div class="hub-content">
+        
+        <div class="hub-header">
+<div class="brand-container">
+    <img src="BR.gif" alt="Logo Best Rent" class="hub-logo">
+    <span class="presenta-text">Presenta</span>
+</div>
+            <h1>AI SOLUTION</h1>
+        </div>
+
+        <div class="hub-menu-list">
+            <div class="hub-card" onclick="location.href='descrizione.html'">
+                <div class="section-title">DESCRIZIONE</div>
+                <p>La visione strategica e il funzionamento del <strong>Cervello Digitale</strong>.</p>
+            </div>
+
+            <div class="hub-card" onclick="location.href='tech.html'">
+                <div class="section-title">APPROFONDIMENTI</div>
+                <p>Dettagli su <strong>architettura ibrida</strong> e database SQL/Mongo.</p>
+            </div>
+
+            <div class="hub-card" onclick="location.href='usecase.html'">
+                <div class="section-title">USE CASE</div>
+                <p>Applicazioni verticali: <strong>Compliance</strong> e Procurement.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
